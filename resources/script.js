@@ -12,7 +12,7 @@ streak = 0
 
 const isBot = door => door.src === botDoorPath
 
-const isClicked = door => !door.src === closedDoorPath
+const isClicked = door => !(door.src === closedDoorPath)
 
 const playDoor = (door) => {
   numClosedDoors--;
