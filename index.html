@@ -1,92 +1,44 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Tea Cozy</title>
-        <link href="resources/css/index.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div id="logo">
-                    <img src="resources/images/logo.png" alt="Logo">
-                </div>
-                <div id="navlinks">
-                    <p>Mission</p>
-                    <p>Featured Tea</p>
-                    <p>Locations</p>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section id="hero-image">
-                <div class="section-text">
-                    <h2>Our Mission</h2>
-                    <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
-                </div>
-            </section>
-            <section>
-                <div class="section-text">
-                    <h2>Tea of the Month</h2>
-                    <h4>What's Steeping at the Tea Cozy?</h4>
-                </div>
-                <div id="gallery">
-                    <article>
-                        <img src="resources/images/berry-blitz.jpg">
-                        <h3>Fall Berry Blitz Tea</h3>
-                    </article>
-                    <article>
-                        <img src="resources/images/spiced-rum.jpg">
-                        <h3>Spiced Rum Tea</h3>
-                    </article>
-                    <article>
-                        <img src="resources/images/donut.jpg">
-                        <h3>Seasonal Donuts</h3>
-                    </article>
-                    <article>
-                        <img src="resources/images/myrtle-avenue.jpg">
-                        <h3>Myrtle Ave Tea</h3>
-                    </article>
-                    <article>
-                        <img src="resources/images/bedford-bizarre.jpg">
-                        <h3>Bedford Bizarre Tea</h3>
-                    </article>
-                </div>
-            </section>
-            <section id="locations">
-                <div class="section-text no-background">
-                    <h2 class="no-background">Locations</h2>
-                </div>
-                <div id="location-boxes" class="no-background">
-                    <article>
-                        <h3>Downtown</h3>
-                        <p>384 West 4th Street</p>
-                        <p>Suite 108</p>
-                        <p>Portland, Maine</p>
-                    </article>
-                    <article>
-                        <h3>East Bayside</h3>
-                        <p>3433 Phisherman's Avenue</p>
-                        <p>(Northwest Corner)</p>
-                        <p>Portland, Maine</p>
-                    </article>
-                    <article>
-                        <h3>Oakdale</h3>
-                        <p>515 Crescent Avenue</p>
-                        <p>Second Floor</p>
-                        <p>Portland, Maine</p>
-                    </article>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <section id="contact-info" class="section-text">
-                <h2>The Tea Cozy</h2>
-                <h5>contact@theteacozy.com</h5>
-                <h5>917-555-8904</h5>
-            </section>
-            <section id="copyright">
-                <p>copyright The Tea Cozy 2020</p>
-            </section>
-        </footer>
-    </body>
+  <head>
+    <title>Chore Door!</title>
+    <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/logo.svg">
+    </div>
+    <div class = "title-row">
+      <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg">
+      <p class="instructions-title">Instructions</p>
+      <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg">
+    </div>
+    <table class="instructions-row">
+      <tr>
+        <td class="instructions-number">1</td>
+        <td class="instructions-text">Hiding behind one of these doors is the ChoreBot.</td>
+      </tr>
+      <tr>
+        <td class="instructions-number">2</td>
+        <td class="instructions-text">Your mission is to open all of the doors without running into the ChoreBot.</td>
+      </tr>
+      <tr>
+        <td class="instructions-number">3</td>
+        <td class="instructions-text">If you manage to avoid the ChoreBot until you open the very last door, you win!</td>
+      </tr>
+      <tr>
+        <td class="instructions-number">4</td>
+        <td class="instructions-text">See if you can score a winning streak!</td>
+      </tr>
+    </table>
+    <div class="door-row">
+      <img id="door1" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
+      <img id="door2" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
+      <img id="door3" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
+    </div>
+    <div id="start" class="start-row">Good luck!</div>
+    <script type="text/javascript" src="./resources/script.js"></script>
+  </body>
 </html>
