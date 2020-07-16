@@ -1,12 +1,14 @@
 const doorImage1 = document.getElementById("door1");
 const doorImage2 = document.getElementById("door2");
 const doorImage3 = document.getElementById("door3");
+const streakTag = document.getElementById("streak")
 numClosedDoors = 3;
 let openDoor1;
 let openDoor2;
 let openDoor3;
 startButton = document.getElementById("start")
 currentlyPlaying = true
+streak = 0
 
 const isBot = door => door.src === botDoorPath
 
@@ -81,8 +83,12 @@ const startRound = () => {
 
 const gameOver = (status) => {
   if (status === "win") {
+    streak++
+    streakTag.innerHTML = streak
     startButton.innerHTML = "You win! Play again?"
   } else {
+    streak = 0
+    streakTag.innerHTML = streak
     startButton.innerHTML = "Game over! Play again?"
   }
   currentlyPlaying = false
