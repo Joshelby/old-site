@@ -25,12 +25,20 @@ const getVenues = async () => {
   if (response.ok) {
     const jsonResponse = await response.json();
     const allVenues = jsonResponse.response.groups[0].items.map(item => item.venue);
+    console.log(allVenues)
     const venues = []
-    for (i = 0; i < 4; i++) {
-      const num = Math.floor(Math.random()*(allVenues.length - 1))
-      venues.push(allVenues.pop(num))
+    let usedNums = []
+    for (i = 0; i < 3; i++) {
+      let num = 0
+      do {
+        num = Math.floor(Math.random()*(allVenues.length - 1))
+      } while (usedNums.includes(num))
+      usedNums.push(num)
+      console.log(num)
+      venues.push(allVenues[usedNums[i]])
+      allVenues.pop()
     }
-    console.log(venues);
+    console.log(venues)
     return venues;
   }
   } catch(error) {
@@ -44,7 +52,6 @@ const getForecast = async () => {
     const response = await fetch(urlToFetch)
     if (response.ok) {
       const jsonResponse = await response.json()
-      console.log(jsonResponse)
       return jsonResponse
     }
    
