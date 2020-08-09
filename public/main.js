@@ -27,8 +27,8 @@ const getVenues = async () => {
     const allVenues = jsonResponse.response.groups[0].items.map(item => item.venue);
     const venues = []
     for (i = 0; i < 4; i++) {
-      const num = Math.floor(Math.random()*12)
-      venues.push(allVenues[num])
+      const num = Math.floor(Math.random()*(allVenues.length - 1))
+      venues.push(allVenues.pop(num))
     }
     console.log(venues);
     return venues;
