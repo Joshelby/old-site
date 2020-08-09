@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Chore Door!</title>
-    <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>Wanderlust</title>
+    <link rel="stylesheet" type="text/css" href="public/reset.css" />
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans" rel="stylesheet">
   </head>
-
   <body>
-    <div class="header">
-      <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/logo.svg">
+    <header>
+      <img class="logo" src="https://s3.amazonaws.com/codecademy-content/courses/intermediate-javascript-requests/wanderlust/logo.svg" alt="logo" />
+    </header>
+    <main>
+      <h1>Where do you want to land?</h1>
+      <form autocomplete="off">
+        <input type="text" id="city">
+        <button id="button" type="submit">Submit</button>
+      </form>
+    </main>
+    <div class="container">
+    <div id="destination">
+
     </div>
-    <div class = "title-row">
-      <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg">
-      <p class="instructions-title">Instructions</p>
-      <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg">
+    <div class="sectiontitle">
+      <h2>CURRENT WEATHER</h2>
     </div>
-    <table class="instructions-row">
-      <tr>
-        <td class="instructions-number">1</td>
-        <td class="instructions-text">Hiding behind one of these doors is the ChoreBot.</td>
-      </tr>
-      <tr>
-        <td class="instructions-number">2</td>
-        <td class="instructions-text">Your mission is to open all of the doors without running into the ChoreBot.</td>
-      </tr>
-      <tr>
-        <td class="instructions-number">3</td>
-        <td class="instructions-text">If you manage to avoid the ChoreBot until you open the very last door, you win!</td>
-      </tr>
-      <tr>
-        <td class="instructions-number">4</td>
-        <td class="instructions-text">See if you can score a winning streak!</td>
-      </tr>
-    </table>
-    <div class="door-row">
-      <img id="door1" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
-      <img id="door2" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
-      <img id="door3" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
+    <section id="weather">
+
+        <div class="weather" id="weather1">
+
+        </div>
+
+    </section>
+    <div class="sectiontitle">
+      <h2>TOP ATTRACTIONS</h2>
     </div>
-    <div id="start" class="start-row">
-      <p>Good luck!</p>
-    </div>
-    <div class="streak-row">
-      <p>Your current streak:</p>
-      <p id="streak">0</p>
-    </div>
-    <script type="text/javascript" src="./resources/script.js"></script>
+    <section id="venues">
+      <div class="venue" id="venue1">
+
+      </div>
+      <div class="venue" id="venue2">
+
+      </div>
+      <div class="venue" id="venue3">
+
+      </div>
+    </section>
+    <footer>
+    </footer>
+
+  </div>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="public/helpers.js"></script>
+    <script src="public/main.js"></script>
   </body>
 </html>
